@@ -1,0 +1,18 @@
+{
+    "name": "adamtyn/lumen-artisan-serve",
+    "description": "移植Laravel的快速启动服务的Artisan指令到Lumen",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AdamTyn",
+            "email": "tynadam@foxmail.com"
+        }
+    ],
+    "require": {},
+	"autoload":{
+		"psr-4": {
+            "AdamTyn\\Lumen\\Artisan": "src/"
+        }
+	}
+}
