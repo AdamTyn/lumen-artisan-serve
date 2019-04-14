@@ -65,7 +65,7 @@ class ServeCommand extends Command
             ProcessUtils::escapeArgument((new PhpExecutableFinder)->find(false)),
             $this->host(),
             $this->port(),
-            ProcessUtils::escapeArgument(base_path('server.php'))
+            ProcessUtils::escapeArgument(__DIR__ . DIRECTORY_SEPARATOR . 'server.php')
         );
     }
 
