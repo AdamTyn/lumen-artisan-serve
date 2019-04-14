@@ -1,6 +1,6 @@
 <?php
 
-namespace Adam\Lumen\Artisan;
+namespace AdamTyn\Lumen\Artisan;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\ProcessUtils;
