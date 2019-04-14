@@ -14,7 +14,7 @@ $uri = urldecode(
 // This file allows us to emulate Apache's "mod_rewrite" functionality from the
 // built-in PHP web server. This provides a convenient way to test a Laravel
 // application without having installed a "real" web server software here.
-if ($uri !== '/' && file_exists(__DIR__.$uri)) {
+if ($uri !== '/' && file_exists(__DIR__ . $uri)) {
     return false;
 }
 
@@ -28,7 +28,7 @@ function public_path()
     for ($i = 0; $i < $count - 3; ++$i) {
         $return .= ($temp[$i] . $divide);
     }
-    return $return.'public';
+    return $return . 'public' . DIRECTORY_SEPARATOR;
 }
 
 require_once public_path() . 'index.php';
