@@ -25,7 +25,7 @@ function public_path()
     $temp = explode($divide, $path);
     $return = '';
     $count = count($temp);
-    for ($i = 0; $i < $count - 3; ++$i) {
+    for ($i = 0; $i < $count - 4; ++$i) {
         $return .= ($temp[$i] . $divide);
     }
     return $return . 'public' . DIRECTORY_SEPARATOR;
