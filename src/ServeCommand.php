@@ -21,7 +21,7 @@ class ServeCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Serve the application on the PHP development server';
+    protected $description = '快速启动 Lumen 服务器';
 
     /**
      * The current port offset.
@@ -41,7 +41,7 @@ class ServeCommand extends Command
     {
         chdir(base_path('public'));
 
-        $this->line("<info>Laravel development server started:</info> <http://{$this->host()}:{$this->port()}>");
+        $this->line("<info>启动成功 :</info> <http://{$this->host()}:{$this->port()}>");
 
         passthru($this->serverCommand(), $status);
 
