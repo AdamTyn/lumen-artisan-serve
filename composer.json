@@ -1,6 +1,12 @@
 {
     "name": "adamtyn/lumen-artisan-serve",
     "description": "移植Laravel的 `php artisan serve` [快速启动服务]指令到Lumen",
+    "keywords": [
+        "framework",
+        "laravel",
+        "lumen",
+        "adamtyn"
+    ],
     "type": "library",
     "license": "MIT",
     "authors": [
